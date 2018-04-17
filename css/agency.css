@@ -692,3 +692,17 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+
+i.fa{
+background: red;
+border-radius: 50%;
+}
+
+.btn-primary, ul.social-buttons li a{
+  background: red;
+  border-color:red;
+}
+a{
+  color: red;
+}
