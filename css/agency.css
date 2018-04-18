@@ -695,14 +695,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 
 i.fa{
-background: red;
+background: blue;
 border-radius: 50%;
 }
 
 .btn-primary, ul.social-buttons li a{
-  background: red;
-  border-color:red;
+  background: blue;
+  border-color:blue;
 }
 a{
-  color: red;
+  color: blue;
 }
