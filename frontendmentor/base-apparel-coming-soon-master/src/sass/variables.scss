@@ -1,0 +1,15 @@
+
+$josefin: 'Josefin Sans', sans-serif;
+
+$white:#ffffff;
+$black: #000000;
+$gray:hsl(0, 6%, 24%);
+
+$primary-font-family: $josefin;
+$primary-font-color: $gray;
+$box-shadow: $gray;
+
+// GRADIENTS
+$gradient-from-white-to-light-pink: linear-gradient(135deg, #ffffff, #fff5f5);
+$gradient-from-pink-to-dark-pink: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+$gradient-from-white-to-light-pink-v2: linear-gradient(135deg, #fff5f5, #f8bfbf);

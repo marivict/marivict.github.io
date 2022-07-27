@@ -1,0 +1,214 @@
+$block: 'coming-soon';
+
+.#{$block} {
+    &__left-container{
+        &__bg {
+            background-image: url('../../images/bg-pattern-desktop.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: -15px;
+            margin-left: -15px;
+            
+
+            @include media-breakpoint-up(lg) {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            &__color {
+                background-image:$gradient-from-white-to-light-pink;
+                @include media-breakpoint-down(lg) {
+                    height: auto!important;
+                }
+            }
+        }
+    }
+
+    &__left-wrapper{
+        max-width: 460px;
+        width: 100%;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(lg) {
+            max-width: 600px;
+        }
+        @include media-breakpoint-down(md) {
+            max-width: 358px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 0 20px;
+        }
+    }
+
+    &__content{
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 100px;
+        }
+        &__h1{
+            margin-bottom: 22px;
+
+            &--light {
+                font-size: 70px;
+                color: $primary;
+                letter-spacing: 20px;
+                text-transform: uppercase;
+                font-weight: 300;
+                line-height: 52px;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 44px;
+                    line-height: 40px;
+                    letter-spacing: 16px;
+                }
+            }
+
+            &--bold {
+                font-size: 70px;
+                color: $primary-font-color;
+                letter-spacing: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 64px;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 44px;
+                    line-height: 40px;
+                    letter-spacing: 16px;
+                }
+            }
+        }
+
+        &__text {
+            p {
+                font-size: 15px;
+                color: $primary;
+            }
+        }
+    }
+
+    &__right-container {
+        &__bg {
+            background-image: url('../../images/hero-desktop.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        position: relative;
+        margin-top: 36px;
+        &.error {
+            &::before {
+                content:'';
+                background-image:url('../../images/icon-error.svg');
+                padding: 12px;
+                position: absolute;
+                right: 118px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                margin-top: 16px;
+            }
+
+            input {
+                border-color: $secondary;
+                border-width:2px;
+            }
+        }
+        input {
+            width: 100%;
+            border-radius: 30px;
+            border: 1px solid $primary;
+            padding:14px 0;
+            padding-left: 36px;
+            background-color:transparent;
+            position: relative;
+            
+            &::placeholder {
+                color:$primary;
+            }
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &__error {
+            color:$secondary;
+            font-size: 14px;
+            margin-top: 10px;
+            height: 22px;
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 38px;
+            }
+        }
+        &__button {
+            border-radius: 30px;
+            background-image: $gradient-from-pink-to-dark-pink;
+            padding: 15px 10px;
+            max-width: 100px;
+            width: 100%;
+            border-width: 0;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            box-shadow: 0px 13px 25px -6px $primary;
+
+            @include media-breakpoint-down(md) {
+                max-width: 70px;
+            }
+
+            &:before {
+                content: '';
+                background-image: url('../../images/icon-arrow.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 20px 10px;
+            }
+
+            &:hover {
+                background-color: $light-pink;
+            }
+
+            &:active {
+                box-shadow: 0px 13px 14px 0px $primary;
+                background: $light-pink;
+            }
+        }
+    }
+
+    &__header {
+        @include media-breakpoint-down(lg) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        img {
+            @include media-breakpoint-down(lg) {
+                max-width: 100px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__mobile-bg {
+        background-image: url('../../images/hero-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 250px;
+        display: none;
+        @include media-breakpoint-down(lg){
+            display: block;
+        }
+    }
+
+}
