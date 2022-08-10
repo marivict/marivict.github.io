@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-redHatDisplay h-full bg-no-repeat bg-contain bg-top bg-blue-very-pale flex flex-col justify-center" style="background-image:url(./images/pattern-background-desktop.svg)">
+
+  <div class="max-w-[300px] sm:max-w-[350px] w-full mx-auto rounded-[16px] overflow-hidden">
+    <div class="bg-no-repeat bg-cover bg-center h-40 sm:h-48" style="background-image: url(./images/illustration-hero.svg)"></div>
+    <div class="bg-white py-8 px-7 sm:px-10">
+      <h3 class="text-xl font-black text-blue-dark text-center mb-3">Order Summary</h3>
+
+      <p class="max-w-[264px] mx-auto text-center text-sm text-blue-desaturated mb-5">You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+
+      <div class="max-w-[280px] mx-auto flex items-center justify-between bg-blue-very-pale rounded-lg p-4 mb-6">
+        <div class="flex justify-between">
+          <div class="mr-5">
+            <img class="max-w-[40px] " src="./images/icon-music.svg" />
+          </div>
+          <div>
+            <span class="font-black text-sm text-blue-dark block">Annual Plan</span>
+            <span class="text-xs text-blue-desaturated block">$59.99/year</span>
+          </div>
+        </div>
+
+        <a href="#" class="text-xs text-blue-bright font-semibold underline decoration-solid hover:no-underline">Change</a>
+      </div>
+      <div class="flex flex-col items-center">
+        <button class="block bg-blue-bright text-white w-full text-xs py-3 rounded-lg font-semibold mb-5 drop-shadow-xl hover:opacity-75">Proceed to Payment</button>
+        <a class="text-xs text-blue-desaturated font-semibold hover:text-blue-dark" href="#">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/marivict">Maria De La Rosa</a>.
+  </div>
+</body>
+</html>
