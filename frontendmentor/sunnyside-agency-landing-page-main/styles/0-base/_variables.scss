@@ -1,0 +1,35 @@
+/*------------------------*/
+/*   Font Family */
+/*------------------------*/
+$barlow: 'Barlow', sans-serif;
+$fraunces: 'Fraunces', serif;
+/*------------------------*/
+/*   Color Palettes*/
+/*------------------------*/
+
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkDesaturatedCyan: hsl(167, 40%, 24%);
+$darkBlue: hsl(198, 62%, 26%);
+$darkModeratedCyan: hsl(168, 34%, 41%);
+$lightModeratedCyan: #90d4c5;
+$veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+$darkGrayishBlue: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+/*------------------------*/
+/*   Theme Color*/
+/*------------------------*/
+
+$default-text-color: $darkGrayishBlue;
+$primary-text-color: $veryDarkDesaturatedBlue;
+$secondary-text-color: $darkModeratedCyan;
+
+/*------------------------*/
+/*   Font Family */
+/*------------------------*/
+
+$primary-font-family: $barlow;
+$secondary-font-family: $fraunces;

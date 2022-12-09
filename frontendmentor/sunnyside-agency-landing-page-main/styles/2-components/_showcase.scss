@@ -1,0 +1,162 @@
+$block: 'showcase';
+
+.#{$block} {
+    position: relative;
+    header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        @include media-breakpoint-up(lg) {
+            padding: 46px 40px;
+        }
+
+        .logo {
+            max-width: 120px;
+            width: 100%;
+            @include media-breakpoint-up(lg) {
+                max-width: 170px;
+            }
+        }
+
+        .navbar {
+            ul {
+                list-style: none;
+                li{
+                    margin-right: 60px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+
+                    .contact {
+                        background-color: $white;
+                        color: black;
+                        text-transform: uppercase;
+                        border-radius: 40px;
+                        font-size: 16px;
+                        padding: 20px 30px;
+                        font-family: $secondary-font-family;
+                    }
+                }
+            }
+
+            &--desktop {
+                display: none;
+                @include media-breakpoint-up(lg) {
+                    display: flex;
+                }
+            }
+
+            &--mobile {
+                ul {
+                    list-style: none;
+
+                    li{
+                        margin-right: 60px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        a {
+                            color: $white;
+                            text-decoration: none;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navigation-wrapper-mobile {
+        .show {
+            display: block;
+        }
+    }
+    .navbar--mobile  {
+        position: absolute;
+        top: 108px;
+        width: 100%;
+        z-index: 1000;
+        ul {
+            list-style: none;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: $white;
+            padding: 40px 0;
+            padding-top: 34px;
+
+            li {
+                padding-bottom: 26px;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+                a{
+                    color: $default-text-color;
+                    font-weight: 400;
+                    text-decoration: none;
+
+                    &.contact {
+                        background-color: $yellow;
+                        color: $primary-text-color;
+                        border-radius: 34px;
+                        padding: 16px 28px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: $secondary-font-family;
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .triangle{
+        border-top: 30px solid transparent;
+        border-left: 30px solid transparent;
+        border-bottom: 30px solid $white;
+        position: absolute;
+        top: 48px;
+        right: 5%;
+    }
+
+    &__message {
+        position: absolute;
+        
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        bottom: 20%;
+        right: 0;
+        text-align:center;
+        @include media-breakpoint-up(md) {
+            bottom: 42%;
+        }
+        @media (min-width:992px) and (max-width:1200px){
+            bottom: 28%;
+        }
+        h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 40px;
+            letter-spacing: 10px;
+            @include media-breakpoint-up(md) {
+                font-size: 50px;
+                margin-bottom: 60px;
+            }
+        }
+
+        .arrow-down {
+            max-width: 26px;
+            width: 100%;
+        }
+    }
+}
