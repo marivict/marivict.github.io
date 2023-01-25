@@ -121,9 +121,18 @@ body {
     background-color: var(--dark-grayish-blue);
 }
 
-.article-preview__footer__share img {
+.article-preview__footer__share svg{
     display: inline-block;
     margin-top: 8px;
+    
+}
+
+.article-preview__footer__share svg path{
+    fill: #6E8098;
+}
+
+.article-preview__footer__share.active svg path{
+    fill: #fff;
 }
 
 .article-preview__footer__share--action {
@@ -162,13 +171,14 @@ body {
 .share__social {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.share__social img {
+.share__social a {
     margin-right: 16px;
 }
 
-.share__social img:last-child {
+.share__social a:last-child {
     margin-right: 0;
 }
 
@@ -232,6 +242,7 @@ body {
         height: 55px;
         box-shadow: 0 10px 10px 0 rgba(201, 213, 225, 0.5);
         z-index: 1;
+        bottom: 80px;
     }
 
     .article-preview__footer__share--action.active {
